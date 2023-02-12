@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Population</title>
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media_querie.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="./worldPopulation.js" defer></script>
+</head>
+
+<body>
+    <h1>World Population</h1>
+    <div id="spinner" class="loader"></div>
+
+    <div id="container" class="container">
+
+        <div>
+            <div class="buttons-mainland">
+                <button id="africa" class="btn-mainland">Africa</button>
+                <button id="americas" class="btn-mainland">Americas</button>
+                <button id="asia" class="btn-mainland">Asia</button>
+                <button id="europe" class="btn-mainland">Europe</button>
+                <button id="oceania" class="btn-mainland">Oceania</button>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="chart" class="chart"></canvas>
+        </div>
+        <div id="buttonsCountries" class="buttons-countries"></div>
+
+    </div>
+<div id="msgNoData" class="msg-no-data">
+</div>
+
+</body>
+
+</html>
